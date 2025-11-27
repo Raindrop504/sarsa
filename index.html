@@ -1,233 +1,115 @@
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  background: linear-gradient(to bottom, #0a1f44, #000000);
-  color: #fff;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* Navbar */
-.navbar {
-  position: fixed;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #000;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  padding: 0rem 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-  z-index: 1000;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernadith - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-.logo {
-  background: url("./images/logo.png") no-repeat center;
-  background-size: contain;
-  width: 120px;
-  height: 35px;
-  text-indent: -9999px;
-  overflow: hidden;
-}
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Bernadith Sarsa</h1>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#achievements" class="nav-item">Achievements</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="./images/profile.jpg" alt="Profile picture of Bernadith Sarsa">
+            </div>
+            <div class="hero-content">
+                <h2>Hello, I'm</h2>
+                <h1>Bernadith Sarsa</h1>
+                <p><span class="highlight">Information Technology Student</span>, lifelong learner.</p>
+            </div>
+        </div>
+    </section>
 
-.nav-links a {
-  text-decoration: none;
-  color: #ccc;
-  transition: 0.3s;
-  padding-bottom: 3px;
-  border-bottom: 2px solid transparent;
-}
+    <section id="about">
+        <div class="about-hero-container">
+            <h3>
+    <span style="background-color: transparent; color: #ff9800; padding: 2px 6px; border-radius: 4px;">
+        About me / My Background 
+    </span>
+</h3>
+            <p>
+                Hello! My name is Sarsa, Bernadith G. I am 18 years old, Taking a Bachelor of Science In Information technology. 
+                who enjoys learning new things and improving my skills. I consider myself a dedicated and hardworking person who always
+                 tries to give my best in everything I do. Also I enjoy spending time on activities that help me grow both personally and
+                  academically. I am excited to meet new people, face new challenges, and continue developing my abilities. Thank you for
+                   taking the time to know a little about me.
+            </p>
+            <p>
+                As I continue my journey in IT, I’m learning how to build websites, understand computer systems, and
+                 write basic programs. I aim to gain more experience through projects, collaboration, and constant practice.
+                  This portfolio reflects my growth as I move forward in the tech world.
+                
+    <section id="achievements">
+        <h2><span>Here's My Achievements </span></h2>
+        <div class="achievement">
+            <h3>HTML – CERTIFICATE COMPLETION</h3>
+            <p class="desc">
+                I have successfully completed the SoloLearn HTML Certification, demonstrating my understanding of
+                 HTML fundamentals, including structuring web pages, using tags and elements, creating links, lists,
+                  tables, and forms, and building a solid foundation for web development
+            </p>
+        </div>
 
-.nav-links a:hover {
-  color: #fff;
-  border-bottom: 2px solid #ff9800;
-}
+        <div class="achievement">
+            <h3>To be – Continue</h3>
+            <p class="desc">
+                To be continue
+            </p>
+        </div>
 
-#menu-toggle {
-  display: none;
-}
-
-.hamburger {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #fff;
-}
-
-/* Hero */
-#hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 2rem;
-}
-
-.hero-container {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  max-width: 1000px;
-}
-
-.hero-image img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  object-fit: cover;
-}
-
-.hero-content h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #ddd;
-}
-
-.hero-content h1 {
-  margin: 0.2rem 0;
-  font-size: 2.5rem;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  color: #ccc;
-}
-
-.highlight {
-  color: #ff9800;
-}
-
-/* About */
-#about {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem;
-  text-align: center;
-}
-
-#about h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1.2rem;
-}
-
-#about p {
-  font-size: 1rem;
-  color: #fff;
-  line-height: 2rem;
-}
-
-/* Achievements */
-#achievements {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
-#achievements h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-#achievements span {
-  color: orange;
-}
-
-#achievements h3 {
-  color: orange;
-}
-
-.achievement {
-  background: #1a1a1a;
-  padding: 1.5rem;
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-  transition: 0.3s;
-}
-
-.achievement:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 18px rgba(255, 165, 0, 0.6);
-}
-
-.achievement h3 {
-  font-size: 1rem;
-}
-
-.achievement .desc {
-  font-size: 0.9rem;
-  color: #ddd;
-}
-
-/* Skills */
-#skills {
-  text-align: center;
-  max-width: 900px;
-  margin: 4rem auto;
-  padding: 1rem;
-}
-
-#skills h2 {
-  color: orange;
-}
-
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  margin-top: 25px;
-}
-
-.skill-box {
-  padding: 15px;
-  background: #1a1a1a;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.skill-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
+    <div class="achievement">
+            <h3>To be – Continue</h3>
+            <p class="desc">
+                To be continue
+            </p>
+        </div>
+    </section>
 
 
-/* Contact */
-#contact {
-  text-align: center;
-  padding: 2rem 1rem;
-}
+    <section id="skills">
+    <div class="skills-box">
+        <h2>My skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">HTML & CSS</div>
+            <div class="skill-box">Responsive Web Design</div>
+            <div class="skill-box">C Programming</div>
+            <div class="skill-box">IT Troubleshooting</div>
+        </div>
 
-.contact-links {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
+    </div>
+</section>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Let’s connect and grow together! You can reach me at:</p>
 
-.contact-links a {
-  font-size: 2rem;
-  color: white;
-  transition: 0.3s ease;
-}
+  <div class="contact-links">
+    <a href="xxx" target="_blank">Facebook</a>
+    <a href="xxx" target="_blank">X</a>
+    <a href="xxx" target="_blank">Email</a>
+    <a href="xxx" target="_blank">GitHub</a>
+  </div>
+</section>
 
-.contact-links a:hover {
-  color: #aaa;
-}
+<footer>
+    <p>© 2025 Mara | All Rights Reserved</p>
+</footer>
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #111;
-  color: #aaa;
-}
+</body>
+</html>
